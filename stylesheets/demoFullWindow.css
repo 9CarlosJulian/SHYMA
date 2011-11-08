@@ -1,0 +1,238 @@
+/* @override http://demo.simplecartjs.com/stylesheets/demoFullWindow.css */
+
+/**********************************
+Here lies the CSS for the simpleCart(js) Official Demo.
+You don't need any of this for simpleCart(js) to work.
+PLEASE USE YOUR OWN STYLESHEET AS WE WILL NOT OFFER SUPPORT FOR ANY STYLING ISSUES. 
+**********************************/
+
+
+/**********************************
+RESETS 
+**********************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;
+}
+body { line-height: 1;
+}
+ol, ul { list-style: none;
+}
+blockquote, q { quotes: none;
+}
+
+/ remember to define focus styles! /
+:focus { outline: 0;
+}
+
+/ remember to highlight inserts somehow! /
+ins { text-decoration: none;
+}
+del { text-decoration: line-through;
+}
+
+/ tables still need ‘cellspacing=”0”’ in the markup /
+table { border-collapse: collapse; border-spacing: 0;
+}
+
+/**********************************
+DEMO STYLES
+**********************************/
+body{
+	background:#e3e3e3;
+	font:16px "HelveticaNeue-Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	color:#333;
+}
+#demoContainer{
+	width:855px;
+	height:832px;
+	margin:50px auto 0 auto;
+	padding:38px;
+	background: #bbb;
+	/* poner round corners y mamadas */
+}
+.simpleCart_shelfItem{
+	float:left;
+	margin:20px 10px 0 0;
+	line-height:100%;
+	position:relative;
+}
+.item_image{
+	float:left;
+	margin-right:15px;
+}
+.item_name{
+	text-transform:uppercase;
+	font:bold 12px "Helvetica", Arial, sans-serif;
+	color:#333;
+	margin-top:15px;
+}
+.item_Description{
+	font-size:11px;
+	padding:5px 0;
+	color:  #666;
+}
+.item_price{
+	font:bold 12px "Helvetica", Arial, sans-serif;
+	color:#333;
+	float:left;
+	margin:6px 3px 0 0;
+}
+.item_thumb{
+	display:none;
+}
+.item_add{
+	display:block;
+	width:120px;
+	height:120px;
+	text-indent:-9999px;
+	overflow:hidden;
+	background: green;
+}
+.item_add:hover{
+	background-position:-85px -21px;
+}
+.item_add:active{
+	background-position:-170px -21px;
+}
+.simpleCart_items{
+	clear:both;
+	width: 230px;
+}
+.cartHeaders{
+	display:none;
+}
+.itemContainer{
+	float:left;
+	width:150px;
+	text-align:center;
+	margin-bottom: 20px;
+}
+.itemname{
+	font:bold 11px "Helvetica", Arial, sans-serif;
+	color:#333;
+	text-transform:uppercase;
+}
+.itemthumb{
+	float:none;
+	margin:0;
+	padding-top:5px;
+}
+.itemQuantity{
+	float:left;
+	clear:both;
+	margin-top:5px;
+	display:inline;
+	margin-left:30px;
+}
+.itemQuantity input{
+	background:none;
+	border:none;
+	width:21px;
+	height:17px;
+	background:url(../images/demoSprite.png);
+	text-align:center;
+	color:#333;
+	font:bold 11px Arial, sans-serif;
+	padding:0 9px;
+	margin:0 5px 0 0;
+	vertical-align:top;
+	padding-top:3px;
+}
+.itemQuantity input:focus{
+	outline:none;
+}
+.itemincrement a{
+	display:block;
+	background:url(../images/demoSprite.png) -278px -29px;
+	width:7px;
+	height:5px;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin:10px 0 0 0;
+}
+.itemdecrement a{
+	display:block;
+	background:url(../images/demoSprite.png) -278px -35px;
+	width:7px;
+	height:5px;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin:3px 0 0 0;
+}
+.itemTotal{
+	color:#333;
+	font:bold 11px Arial, sans-serif;
+	margin:8px 0 0 0;
+	padding:0;
+	clear:both;
+}
+#cartTotal{
+	clear:both;
+	font:11px Arial, sans-serif;
+}
+#viewFullDemoLink{
+	clear:both;
+	font:10px Arial, sans-serif;
+	display:block;
+	padding:5px 0 0 0;
+	margin-left:140px;
+	color:#333;
+	text-decoration:none;
+}
+#viewFullDemoLink:hover{
+	text-decoration:underline;
+}
+.simpleCart_empty{
+	clear:both;
+	display:-moz-inline-box;
+	display:inline-block;
+	color:#333;
+	font-size:11px;
+	text-decoration:none;
+	padding-left:665px;
+	margin-right:10px;
+	position:relative;
+	top:25px;
+}
+.simpleCart_checkout{
+	display:-moz-inline-box;
+	display:inline-block;
+	background:url(../images/btnCheckout.png);
+	width:87px;
+	height:24px;
+	text-indent:-9999px;
+	overflow:hidden;
+	position:relative;
+	top:25px;
+}
+p{
+	padding:10px 0;
+}
+strong{
+	font-family:"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	color:#333;
+}
+h3{
+	margin:35px 3px 0 3px;
+	font:bold 20px "Helvetica", Arial, sans-serif;
+	color:#333;
+	text-shadow: rgba(0, 0, 0, 0.796875) 0px -1px 1px;
+}
+
+.item_gallery{
+	width: 530px;
+}
+
+#chachachan{
+	margin: 20px 0px 0px 0px;
+	float: right;
+}

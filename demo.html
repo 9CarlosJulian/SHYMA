@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>simpleCart(js) - Javascript Shopping Cart by The Wojo Group</title>
+	<link rel="stylesheet" href="stylesheets/demoFullWindow.css" type="text/css" media="screen" />
+	
+	<script type="text/javascript" src="js/simpleCart.js"></script>
+	<script type="text/javascript">
+		simpleCart.email = "brett@wojodesign.com";
+		simpleCart.checkoutTo = PayPal;
+		simpleCart.cartHeaders = [ "name", "thumb_image" , "Quantity_input" ,  "increment",  "decrement", "Total" ];
+		
+	</script>
+</head>
+
+<body>
+
+			<!--*********************
+				DEMO STARTS HERE
+			**********************-->
+		<div id="demoContainer">
+			<div id="chachachan">	
+				<!--Add a div with the class of simpleCart_items to display what is in the user's cart-->
+				<div class="simpleCart_items"></div>
+					<!--use a class of simpleCart_empty to empty the cart and simpleCart_checkout to checkout -->
+				<div id="cartTotal">
+					<strong>Total: </strong><span class="simpleCart_total"></span>
+				</div>
+				<!--End #demoContainer-->
+			</div>
+			
+			<div class="item_gallery">
+				<div class="simpleCart_shelfItem">
+					<!--Notice the class names of each tag begin with item_ -->
+					<h5 class="item_name">Bombilla</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">60</span>
+				</div>	
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Refrigerador</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Lavadora</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Secadora</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Microondas</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Horno</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Congelador</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Computadora</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Laptop</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Celular</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Cargador</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<h5 class="item_name">Riata</h5>
+					<a href="javascript:;" class="item_add"></a>
+					<span class="item_price">50000W</span>
+				</div>
+		</div><!--end gallery -->
+		</div>
+	
+			<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+			try {
+			var pageTracker = _gat._getTracker("UA-5082207-10");
+			pageTracker._trackPageview();
+			} catch(err) {}</script>
+</body>
+</html>
+
+<!-- Localized -->
