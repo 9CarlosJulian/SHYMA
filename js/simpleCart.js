@@ -46,7 +46,7 @@ function Cart(){
 	me.shippingQuantityRate = 0;
 	me.shippingRate = 0;
 	me.shippingCost = 0;
-	me.currency = USD;
+	me.currency = CHF;
 	me.checkoutTo = PayPal;
 	me.email = "";
 	me.merchantId	 = "";
@@ -740,8 +740,6 @@ function Cart(){
 
 	me.currencySymbol = function() {
 		switch(me.currency){
-			case CHF:
-				return "CHF&nbsp;";
 			case CZK:
 				return "CZK&nbsp;";
 			case DKK:
@@ -761,7 +759,7 @@ function Cart(){
 			case GBP:
 				return "&pound;";
 			case CHF:
-				return "CHF&nbsp;";
+				return "&nbsp;";	
 			case THB: 
 				return "&#3647;";
 			case USD:

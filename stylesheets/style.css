@@ -1,0 +1,221 @@
+div#header {
+	background-color: #353535;
+	height: 190px;
+	border-bottom: 1px solid #888;
+	padding-top: 50px;
+}
+#header h1 {
+	font-family: Museo;
+	font-weight: 300;
+	color: #F6F6E9;
+	font-size: 50px;
+	text-align: center;
+}
+#header h2 {
+	font-family: Museo;
+	font-weight: 300;
+	color: #999;
+	font-size: 25px;
+	text-align: center;
+}
+#header a h3{
+	font-family: Museo;
+	font-weight: 300;
+	color: #fff;
+	font-size: 20px;
+	margin: 10px 0px 0px 0px;
+	text-align: center;	
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	background: #853C3D;
+}
+
+#header a.simpleCart_empty {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#header a.simpleCart_empty img {
+	max-width: 60px;
+	text-align: center;
+}
+
+#footer h1 {
+	font-family: Museo;
+	font-weight: 300;
+	font-size: 35px;
+	color: #F6F6E9;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	text-shadow: #000 1px 1px 2px;
+}
+
+#total {
+	clear: both;
+	width: 100%;
+	background: #F6F6E9;
+	
+}
+
+#total #cartTotal, #total #cartTotal strong {
+	font-family: Museo;
+	font-weight: 300;
+	text-align: center;
+	font-size: 60px;
+	padding: 20px 0px 20px 0px;
+	text-shadow: #fff 1px 1px 2px;
+}
+
+#total #cartTotal strong {
+	font-weight: 500;
+}
+
+.calc1{
+	background: url('../icon/calc-01.png') no-repeat left top;
+}
+
+.calc1:hover,.calc1:focus{
+	background: url('../clicked/clicked-01.png') no-repeat left top;
+}
+
+.calc2{
+	background: url('../icon/calc-02.png') no-repeat left top;
+}
+
+.calc2:hover,.calc2:focus{
+	background: url('../clicked/clicked-02.png') no-repeat left top;
+}
+
+.calc3{
+	background: url('../icon/calc-03.png') no-repeat left top;
+}
+
+.calc3:hover,.calc3:focus{
+	background: url('../clicked/clicked-03.png') no-repeat left top;
+}
+
+.calc4{
+	background: url('../icon/calc-04.png') no-repeat left top;
+}
+
+.calc4:hover,.calc4:focus{
+	background: url('../clicked/clicked-04.png') no-repeat left top;
+}
+
+.calc5{
+	background: url('../icon/calc-05.png') no-repeat left top;
+}
+
+.calc5:hover,.calc5:focus{
+	background: url('../clicked/clicked-05.png') no-repeat left top;
+}
+
+.calc6{
+	background: url('../icon/calc-06.png') no-repeat left top;
+}
+
+.calc6:hover,.calc6:focus{
+	background: url('../clicked/clicked-06.png') no-repeat left top;
+}
+
+.calc7{
+	background: url('../icon/calc-07.png') no-repeat left top;
+}
+
+.calc7:hover,.calc7:focus{
+	background: url('../clicked/clicked-07.png') no-repeat left top;
+}
+
+.calc8{
+	background: url('../icon/calc-08.png') no-repeat left top;
+}
+
+.calc8:hover,.calc8:focus{
+	background: url('../clicked/clicked-08.png') no-repeat left top;
+}
+
+.calc9{
+	background: url('../icon/calc-09.png') no-repeat left top;
+}
+
+.calc9:hover,.calc9:focus{
+	background: url('../clicked/clicked-09.png') no-repeat left top;
+}
+
+.calc10{
+	background: url('../icon/calc-10.png') no-repeat left top;
+}
+
+.calc10:hover,.calc10:focus{
+	background: url('../clicked/clicked-10.png') no-repeat left top;
+}
+
+.calc11{
+	background: url('../icon/calc-11.png') no-repeat left top;
+}
+
+.calc11:hover,.calc11:focus{
+	background: url('../clicked/clicked-11.png') no-repeat left top;
+}
+
+.calc12{
+	background: url('../icon/calc-12.png') no-repeat left top;
+}
+
+.calc12:hover,.calc12:focus{
+	background: url('../clicked/clicked-12.png') no-repeat left top;
+}
+
+.calc13{
+	background: url('../icon/calc-13.png') no-repeat left top;
+}
+
+.calc13:hover,.calc13:focus{
+	background: url('../clicked/clicked-13.png') no-repeat left top;
+}
+
+.calc14{
+	background: url('../icon/calc-14.png') no-repeat left top;
+}
+
+.calc14:hover,.calc14:focus{
+	background: url('../clicked/clicked-14.png') no-repeat left top;
+}
+
+.calc15{
+	background: url('../icon/calc-15.png') no-repeat left top;
+}
+
+.calc15:hover,.calc15:focus{
+	background: url('../clicked/clicked-15.png') no-repeat left top;
+}
+
+.calc16{
+	background: url('../icon/calc-16.png') no-repeat left top;
+}
+
+.calc16:hover,.calc165:focus{
+	background: url('../clicked/clicked-16.png') no-repeat left top;
+}
+
+.calc17{
+	background: url('../icon/calc-17.png') no-repeat left top;
+}
+
+.calc17:hover,.calc17:focus{
+	background: url('../clicked/clicked-17.png') no-repeat left top;
+}
+
+.calc18{
+	background: url('../icon/calc-18.png') no-repeat left top;
+}
+
+.calc18:hover,.calc18:focus{
+	background: url('../clicked/clicked-18.png') no-repeat left top;
+}

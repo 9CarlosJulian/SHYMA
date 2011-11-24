@@ -1,4 +1,3 @@
-<!-- vergas puto -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
@@ -8,7 +7,7 @@
 
 	<title>simpleCart(js) - Javascript Shopping Cart by The Wojo Group</title>
 	<link rel="stylesheet" href="stylesheets/demoFullWindow.css" type="text/css" media="screen" />
-	
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="js/simpleCart.js"></script>
 	<script type="text/javascript">
 		simpleCart.email = "brett@wojodesign.com";
@@ -16,6 +15,8 @@
 		simpleCart.cartHeaders = [ "name", "thumb_image" , "Quantity_input" ,  "increment",  "decrement", "Total" ];
 		
 	</script>
+	<script type="text/javascript" src="http://use.typekit.com/gqx7phl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
@@ -23,82 +24,141 @@
 			<!--*********************
 				DEMO STARTS HERE
 			**********************-->
+		<div id="megawrapper">
+		<div id="header">
+			<h1>Calcula tu consumo eléctrico.</h1>
+			<h2>¿Qué aparatos tienes en tu casa?</h2>
+			<a class="simpleCart_empty" href="javascript:;"><img src="images/refresh-06.png" alt=""</a>
+		</div>	
 		<div id="demoContainer">
 			<div id="chachachan">	
 				<!--Add a div with the class of simpleCart_items to display what is in the user's cart-->
 				<div class="simpleCart_items"></div>
 					<!--use a class of simpleCart_empty to empty the cart and simpleCart_checkout to checkout -->
-				<div id="cartTotal">
-					<strong>Total: </strong><span class="simpleCart_total"></span>
-				</div>
 				<!--End #demoContainer-->
 			</div>
 			
 			<div class="item_gallery">
 				<div class="simpleCart_shelfItem">
 					<!--Notice the class names of each tag begin with item_ -->
-					<h5 class="item_name">Bombilla</h5>
-					<a href="javascript:;" class="item_add"></a>
+					<a href="javascript:;" class="item_add calc1"></a>
+					<h5 class="item_name">Cafetera</h5>
 					<span class="item_price">60</span>
+					<span class="item_thumb">icon/calca-01.png</span>
 				</div>	
 				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc2"></a>
 					<h5 class="item_name">Refrigerador</h5>
-					<a href="javascript:;" class="item_add"></a>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-02.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
-					<h5 class="item_name">Lavadora</h5>
-					<a href="javascript:;" class="item_add"></a>
+					<a href="javascript:;" class="item_add calc3"></a>
+					<h5 class="item_name">Tostador</h5>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-03.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
-					<h5 class="item_name">Secadora</h5>
-					<a href="javascript:;" class="item_add"></a>
+					<a href="javascript:;" class="item_add calc4"></a>
+					<h5 class="item_name">Foco Regular</h5>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-04.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
-					<h5 class="item_name">Microondas</h5>
-					<a href="javascript:;" class="item_add"></a>
+					<a href="javascript:;" class="item_add calc5"></a>
+					<h5 class="item_name">Foco Ahorrador</h5>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-05.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
-					<h5 class="item_name">Horno</h5>
-					<a href="javascript:;" class="item_add"></a>
+					<a href="javascript:;" class="item_add calc6"></a>
+					<h5 class="item_name">Teléfono</h5>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-06.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
-					<h5 class="item_name">Congelador</h5>
-					<a href="javascript:;" class="item_add"></a>
-					<span class="item_price">50000W</span>
-				</div>
-				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc7"></a>
 					<h5 class="item_name">Computadora</h5>
-					<a href="javascript:;" class="item_add"></a>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-07.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc8"></a>
 					<h5 class="item_name">Laptop</h5>
-					<a href="javascript:;" class="item_add"></a>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-08.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc9"></a>
+					<h5 class="item_name">Videojuego</h5>
+					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-09.png</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc10"></a>
+					<h5 class="item_name">iPod</h5>
+					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-10.png</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc11"></a>
 					<h5 class="item_name">Celular</h5>
-					<a href="javascript:;" class="item_add"></a>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-11.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
-					<h5 class="item_name">Cargador</h5>
-					<a href="javascript:;" class="item_add"></a>
+					<a href="javascript:;" class="item_add calc12"></a>
+					<h5 class="item_name">Impresora</h5>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-12.png</span>
 				</div>
 				<div class="simpleCart_shelfItem">
-					<h5 class="item_name">Riata</h5>
-					<a href="javascript:;" class="item_add"></a>
+					<a href="javascript:;" class="item_add calc13"></a>
+					<h5 class="item_name">Televisión</h5>
 					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-13.png</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc14"></a>
+					<h5 class="item_name">Lavadora</h5>
+					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-14.png</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc15"></a>
+					<h5 class="item_name">Secadora</h5>
+					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-15.png</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc16"></a>
+					<h5 class="item_name">Ventilador</h5>
+					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-16.png</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc17"></a>
+					<h5 class="item_name">Microondas</h5>
+					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-17.png</span>
+				</div>
+				<div class="simpleCart_shelfItem">
+					<a href="javascript:;" class="item_add calc18"></a>
+					<h5 class="item_name">Plancha</h5>
+					<span class="item_price">50000W</span>
+					<span class="item_thumb">icon/calca-18.png</span>
 				</div>
 		</div><!--end gallery -->
 		</div>
-	
+		<div id="footer">
+			<h1>Tu consumo aproximado es de:</h1>
+		</div>
+		<div id="total">
+			<div id="cartTotal">
+				<strong>Total:</strong><span class="simpleCart_total"></span>&nbsp;kW
+			</div>
+		</div>
+		</div>
 			<script type="text/javascript">
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

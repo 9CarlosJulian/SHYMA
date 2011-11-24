@@ -46,55 +46,61 @@ table { border-collapse: collapse; border-spacing: 0;
 DEMO STYLES
 **********************************/
 body{
-	background:#e3e3e3;
-	font:16px "HelveticaNeue-Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	background:#404040;
+	font:16px Museo;
 	color:#333;
 }
 #demoContainer{
-	width:855px;
-	height:832px;
-	margin:50px auto 0 auto;
-	padding:38px;
-	background: #bbb;
+	width:900px;
+	margin:0 auto;
+	padding-top: 50px;
 	/* poner round corners y mamadas */
 }
 .simpleCart_shelfItem{
 	float:left;
-	margin:20px 10px 0 0;
+	margin: 0px 40px 0px 0px;
 	line-height:100%;
 	position:relative;
+	text-align: center;
 }
 .item_image{
 	float:left;
 	margin-right:15px;
 }
 .item_name{
-	text-transform:uppercase;
-	font:bold 12px "Helvetica", Arial, sans-serif;
-	color:#333;
+	font:bold 22px Museo;
+	font-weight: 300;
+	color:#F6F6E9;
 	margin-top:15px;
+	text-shadow: #000 1px 1px 1px;
 }
 .item_Description{
 	font-size:11px;
 	padding:5px 0;
-	color:  #666;
+	color:  #F6F6E9;
+	text-shadow: #000 1px 1px 1px;
+	
 }
 .item_price{
-	font:bold 12px "Helvetica", Arial, sans-serif;
-	color:#333;
+	font:bold 12px Museo;
+	font-weight: 300;
+	color:#F6F6E9;
 	float:left;
 	margin:6px 3px 0 0;
+	text-indent: -9999px;
+	text-shadow: #000 1px 1px 1px;
 }
 .item_thumb{
 	display:none;
 }
-.item_add{
-	display:block;
-	width:120px;
-	height:120px;
-	text-indent:-9999px;
-	overflow:hidden;
-	background: green;
+a.item_add {
+	display: block;
+	width:168px;
+	height:187px;
+}
+a.item_add img{
+	width: 168px;
+	height:  187px;
 }
 .item_add:hover{
 	background-position:-85px -21px;
@@ -104,7 +110,18 @@ body{
 }
 .simpleCart_items{
 	clear:both;
-	width: 230px;
+	}
+#chachachan{
+	width: 200px;
+	margin: 20px 0px 0px 0px;
+	padding: 25px 0px 25px 0px;
+	float: right;
+	background-color: #333;
+	-webkit-border-radius: 12px; 
+	-moz-border-radius: 12px; 
+	border-radius: 12px; 
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+	
 }
 .cartHeaders{
 	display:none;
@@ -113,18 +130,25 @@ body{
 	float:left;
 	width:150px;
 	text-align:center;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	height: 100px;
+	padding-left: 17px;
 }
 .itemname{
 	font:bold 11px "Helvetica", Arial, sans-serif;
 	color:#333;
 	text-transform:uppercase;
+	display: none;
 }
 .itemthumb{
 	float:none;
 	margin:0;
 	padding-top:5px;
 }
+.itemthumb img{
+	max-width: 80px;
+}
+
 .itemQuantity{
 	float:left;
 	clear:both;
@@ -135,37 +159,45 @@ body{
 .itemQuantity input{
 	background:none;
 	border:none;
-	width:21px;
-	height:17px;
-	background:url(../images/demoSprite.png);
+	width:25px;
+	height:27px;
+	background:url(../images/badge-04.png) center no-repeat;
 	text-align:center;
-	color:#333;
-	font:bold 11px Arial, sans-serif;
+	color:#fff;
+	font-family: Museo;
 	padding:0 9px;
-	margin:0 5px 0 0;
-	vertical-align:top;
 	padding-top:3px;
+	position: relative;
+	top: -100px;
+	left: 44px;
 }
 .itemQuantity input:focus{
 	outline:none;
 }
+.itemincrement a, .itemdecrement a {
+	position: relative;
+	top: -65px;
+	left: 55px;
+}
+
 .itemincrement a{
 	display:block;
-	background:url(../images/demoSprite.png) -278px -29px;
-	width:7px;
-	height:5px;
+	background:url(../images/flechitas-05.png) top;
+	width:9.6px;
+	height: 8.3px;
 	text-indent:-9999px;
 	overflow:hidden;
-	margin:10px 0 0 0;
+	margin-bottom: 15px;
 }
 .itemdecrement a{
 	display:block;
-	background:url(../images/demoSprite.png) -278px -35px;
-	width:7px;
-	height:5px;
+	background:url(../images/flechitas-05.png) bottom;
+	width:9.6px;
+	height: 8.3px;
 	text-indent:-9999px;
 	overflow:hidden;
 	margin:3px 0 0 0;
+	
 }
 .itemTotal{
 	color:#333;
@@ -173,10 +205,7 @@ body{
 	margin:8px 0 0 0;
 	padding:0;
 	clear:both;
-}
-#cartTotal{
-	clear:both;
-	font:11px Arial, sans-serif;
+	display: none;
 }
 #viewFullDemoLink{
 	clear:both;
@@ -189,18 +218,6 @@ body{
 }
 #viewFullDemoLink:hover{
 	text-decoration:underline;
-}
-.simpleCart_empty{
-	clear:both;
-	display:-moz-inline-box;
-	display:inline-block;
-	color:#333;
-	font-size:11px;
-	text-decoration:none;
-	padding-left:665px;
-	margin-right:10px;
-	position:relative;
-	top:25px;
 }
 .simpleCart_checkout{
 	display:-moz-inline-box;
@@ -229,10 +246,9 @@ h3{
 }
 
 .item_gallery{
-	width: 530px;
-}
-
-#chachachan{
-	margin: 20px 0px 0px 0px;
-	float: right;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	left: 60px;
+	margin-bottom: 50px;
 }
