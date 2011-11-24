@@ -4,6 +4,14 @@ div#header {
 	border-bottom: 1px solid #888;
 	padding-top: 50px;
 }
+
+span#porhora {
+	font-size: 25px;
+	line-height: 1.3em;
+	text-align: left;
+	display: inline-block;
+}
+
 #header h1 {
 	font-family: Museo;
 	font-weight: 300;
@@ -30,7 +38,7 @@ div#header {
 #footer {
 	clear: both;
 	width: 100%;
-	background: #853C3D;
+	background: rgb(198, 63, 63);
 }
 
 #header a.simpleCart_empty {
@@ -53,7 +61,7 @@ div#header {
 	color: #F6F6E9;
 	text-align: center;
 	padding: 10px 0px 10px 0px;
-	text-shadow: #000 1px 1px 2px;
+	text-shadow: #853C3D 1px 1px 2px;
 }
 
 #total {
