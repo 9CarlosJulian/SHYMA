@@ -40,6 +40,19 @@ span#porhora {
 	width: 100%;
 	background: rgb(198, 63, 63);
 }
+#desarrollado {
+	clear: both;
+	width: 100%;
+	background-color: #353535;
+	color: #F6F6E9;
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+}
+
+#desarrollado p {
+	font-family: Museo;
+	font-size: 15px;
+}
 
 #header a.simpleCart_empty {
 	display: block;
